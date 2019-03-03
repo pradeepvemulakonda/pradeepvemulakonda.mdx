@@ -85,7 +85,7 @@ TutorialTemplate.propTypes = {
 export default TutorialTemplate;
 
 export const pageQuery = graphql`
-  query TutorialSlug($slug: String!) {
+  query TutorialSlug($slug: String!, $sourceName: String!) {
     site {
       siteMetadata {
         title
