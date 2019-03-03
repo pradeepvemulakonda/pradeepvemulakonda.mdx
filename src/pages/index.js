@@ -47,7 +47,7 @@ class BlogIndex extends React.Component {
   render () {
     const { data, location } = this.props;
     const siteTitle = data.site.siteMetadata.title;
-    const posts = data.mdx.edges;
+    const posts = data.allMdx.edges;
 
     return (
       <ThemeProvider theme={MuiTheme}>

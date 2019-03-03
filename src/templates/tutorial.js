@@ -18,7 +18,7 @@ const renderAst = new RehypeReact({
 class TutorialTemplate extends React.Component {
   render() {
     const { data, location, pageContext } = this.props;
-    const post = data.mdx;
+    const post = data.allMdx.edges[0].node;
     const siteTitle = data.site.siteMetadata.title;
     const { previous, next } = pageContext;
 

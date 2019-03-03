@@ -24,6 +24,10 @@ exports.createPages = ({ graphql, actions }) => {
                       name
                     }
                   }
+                  frontmatter {
+                    title
+                    date(formatString: "MMMM DD, YYYY")
+                  }
                   code {
                     scope
                   }
