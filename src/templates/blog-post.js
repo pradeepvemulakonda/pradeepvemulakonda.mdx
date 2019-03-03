@@ -17,55 +17,56 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = pageContext;
 
     return (
-      <PrimaryLayout location={location} title={siteTitle}>
-        <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1)
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        <MDXProvider components={{}}>
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <MDXRenderer>{post.code.body}</MDXRenderer>
-        </MDXProvider>
-        <hr
-          style={{
-            marginBottom: rhythm(1)
-          }}
-        />
-        <Bio />
+      <MDXProvider components={{}}>
+        <PrimaryLayout location={location} title={siteTitle}>
+          <SEO title={post.frontmatter.title} description={post.excerpt} />
+          <h1>{post.frontmatter.title}</h1>
+          <p
+            style={{
+              ...scale(-1 / 5),
+              display: `block`,
+              marginBottom: rhythm(1),
+              marginTop: rhythm(-1)
+            }}
+          >
+            {post.frontmatter.date}
+          </p>
 
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel='prev'>
-                ← {previous.frontmatter.title}
+          <MDXRenderer>{post.code.body}</MDXRenderer>
+
+          <hr
+            style={{
+              marginBottom: rhythm(1)
+            }}
+          />
+          <Bio />
+
+          <ul
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-between`,
+              listStyle: `none`,
+              padding: 0
+            }}
+          >
+            <li>
+              {previous && (
+                <Link to={previous.fields.slug} rel='prev'>
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={next.fields.slug} rel='next'>
+                  {next.frontmatter.title} →
               </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel='next'>
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </PrimaryLayout>
+              )}
+            </li>
+          </ul>
+        </PrimaryLayout>
+      </MDXProvider>
     );
   }
 }
@@ -86,17 +87,24 @@ export const pageQuery = graphql`
         author
       }
     }
-    allMdx(fields: { slug: { eq: $slug }, sourceName: { eq: $sourceName } }) {
-      id
-      excerpt(pruneLength: 160)
-      code {
-        body
-        scope
-      }
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-      }
+    allMdx(filter: {fields: { slug: { eq: $slug }, sourceName: { eq: $sourceName } }}) {
+      edges {
+        node {
+          excerpt(pruneLength: 160)
+          code {
+            body
+            scope
+          }
+          fields{
+            slug
+            sourceName
+          }
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+          }
+        }
+      }    
     }
   }
 `;
