@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog MDX`,
-    author: `Matt Hagner`,
-    description: `An extension of the gatsby starter blog, with support for MDX`,
-    siteUrl: `https://gatsby-starter-blog-mdx-demo.netlify.com/`,
+    title: `Design Thinking`,
+    author: `Pradeep Vemulakonda`,
+    description: `Thoughts on design and architecture`,
+    siteUrl: `https://blog.vemulakonda.com`,
     social: {
-      twitter: `mattinthecouch`,
-    },
+      twitter: `pradeepvemulako`
+    }
   },
   plugins: [
     {
@@ -15,6 +15,14 @@ module.exports = {
         path: `${__dirname}/content/blog`,
         name: `posts`,
       },
+    },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data`,
+        name: `data`
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -134,14 +142,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Pradeep vemulakonda blog`,
+        short_name: `vemulakonda`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
-      },
+        theme_color: `teal`,
+        display: `minimal-ui`
+      }
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
