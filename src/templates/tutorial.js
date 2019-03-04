@@ -10,11 +10,6 @@ import CompareTab from '../components/compare/tab';
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import { MDXProvider } from '@mdx-js/tag'
 
-const renderAst = new RehypeReact({
-  createElement: React.createElement,
-  components: { 'compare-lang': CompareLang, 'compare-tab': CompareTab }
-}).Compiler;
-
 class TutorialTemplate extends React.Component {
   render() {
     const { data, location, pageContext } = this.props;
