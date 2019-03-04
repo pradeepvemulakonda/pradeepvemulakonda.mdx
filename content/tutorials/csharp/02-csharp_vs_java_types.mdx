@@ -11,6 +11,7 @@ toc: true
 
 import CompareLang from 'components/compare/compare-lang';
 import CompareTab from 'components/compare/tab';
+import MDX from '@mdx-js/runtime'
 
 Introduction to C# and Java type systems. Links to details are provided for reference.
 
@@ -31,6 +32,14 @@ This topic contains the following sections:
 #### <a name="headTypes"></a> Types
 
 <CompareLang>
-    <CompareTab>First</CompareTab>
-    <CompareTab>Second</CompareTab>
+    <CompareTab>
+      <MDX>
+        ```xml
+            class A {}
+        ```
+      </MDX>
+    </CompareTab>
+    <CompareTab>
+      test
+    </CompareTab>
 </CompareLang>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-
 import Bio from '../components/bio';
 import PrimaryLayout from '../layout/primary-layout';
 import SEO from '../components/seo';
@@ -8,8 +7,6 @@ import { rhythm, scale } from '../utils/typography';
 import PropTypes from 'prop-types';
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import { MDXProvider } from '@mdx-js/tag'
-import CompareLang from '../components/compare/compare-lang';
-import CompareTab from '../components/compare/tab';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -18,9 +15,8 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
     const { previous, next } = pageContext;
 
-
     return (
-      <MDXProvider components={{ CompareLang, CompareTab}}>
+      <MDXProvider components={{}}>
         <PrimaryLayout location={location} title={siteTitle}>
           <SEO title={post.frontmatter.title} description={post.excerpt} />
           <h1>{post.frontmatter.title}</h1>
