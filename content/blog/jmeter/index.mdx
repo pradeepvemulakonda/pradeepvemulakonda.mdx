@@ -40,7 +40,7 @@ This script assumes that you are trying to use your custom JMeter build along wi
                 <artifactId>chronos-report-maven-plugin</artifactId>
                 <version>1.1.0</version>
                 <configuration>
-                    <historydir>${project.basedir}/target/history</historydir>
+                    <historydir>}/target/history</historydir>
                 </configuration>
                 <reportSets>
                     <reportSet>
@@ -69,18 +69,18 @@ This script assumes that you are trying to use your custom JMeter build along wi
                 <artifactId>chronos-jmeter-maven-plugin</artifactId>
                 <version>1.1.0</version>
                 <configuration>
-                    <jmeterhome>${project.basedir}/target/jmeter</jmeterhome>
-                    <input>${project.basedir}/src/test/jmeter/main.jmx</input>
+                    <jmeterhome>/target/jmeter</jmeterhome>
+                    <input>/src/test/jmeter/main.jmx</input>
                     <heap>756m</heap>
                     <jmeterVariables>
                         <dataid>fixedloadtest</dataid>
                         <property>
                             <name>gsHost</name>
-                            <value>${gsHost}</value>
+                            <value>$ {gsHost}</value>
                         </property>
                         <property>
                             <name>gsPort</name>
-                            <value>${gsPort}</value>
+                            <value>$ {gsPort}</value>
                         </property>
                         <property>
                             <name>jmeter.save.saveservice.output_format</name>
@@ -92,15 +92,15 @@ This script assumes that you are trying to use your custom JMeter build along wi
                         </property>                        
                         <property>
                             <name>gsUserFilePath</name>
-                            <value>${project.basedir}/in/users.csv</value>
+                            <value>/in/users.csv</value>
                         </property>
                         <property>
                             <name>gsPFilePath</name>
-                            <value>${project.basedir}/in/patients.csv</value>
+                            <value>/in/patients.csv</value>
                         </property>
                         <property>
                             <name>gsListTemplateFilePath</name>
-                            <value>${project.basedir}/in/payloads/List.json</value>
+                            <value>/in/payloads/List.json</value>
                         </property>
                         <property>
                             <name>gsEnableDataPopulation</name>
@@ -131,7 +131,7 @@ This script assumes that you are trying to use your custom JMeter build along wi
                         </goals>
                         <configuration>
                             <executable>
-                             ${project.basedir}/lib/internal/create-and-copy-users.sh
+                             /lib/internal/create-and-copy-users.sh
                             </executable>
                         </configuration>
                     </execution>
@@ -150,7 +150,7 @@ This script assumes that you are trying to use your custom JMeter build along wi
                         </goals>
                         <configuration>
                             <outputDirectory>
-                                 ${project.basedir}/target/jmeter
+                                 /target/jmeter
                             </outputDirectory>
                             <resources>
                                 <resource>
