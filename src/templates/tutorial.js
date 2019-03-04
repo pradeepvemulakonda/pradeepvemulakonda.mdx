@@ -4,9 +4,6 @@ import TutorialLayout from '../layout/tutorial-layout';
 import SEO from '../components/seo';
 import { rhythm, scale } from '../utils/typography';
 import PropTypes from 'prop-types';
-import RehypeReact from 'rehype-react';
-import CompareLang from '../components/compare/compare-lang';
-import CompareTab from '../components/compare/tab';
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import { MDXProvider } from '@mdx-js/tag'
 

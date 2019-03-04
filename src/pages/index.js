@@ -13,8 +13,6 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import { MuiTheme } from '../theme/theme';
 import { MuiThemeProvider } from '@material-ui/core/styles';
-import MDXRenderer from 'gatsby-mdx/mdx-renderer'
-import { MDXProvider } from '@mdx-js/tag'
 
 const StyledCard = styled(Card)`
   margin-bottom: ${rhythm(1 / 2)}
@@ -101,7 +99,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMdx(filter: {fields: {sourceName: {eq: "post"}}}, sort: {fields: [frontmatter___date], order: DESC}) {
+    allMdx(filter: {fields: {sourceName: {eq: "posts"}}}, sort: {fields: [frontmatter___date], order: DESC}) {
       edges {
         node {
           excerpt
