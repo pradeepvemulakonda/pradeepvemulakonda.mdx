@@ -8,6 +8,8 @@ import { rhythm, scale } from '../utils/typography';
 import PropTypes from 'prop-types';
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import { MDXProvider } from '@mdx-js/tag'
+import CompareLang from '../components/compare/compare-lang';
+import CompareTab from '../components/compare/tab';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -16,8 +18,9 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
     const { previous, next } = pageContext;
 
+
     return (
-      <MDXProvider components={{}}>
+      <MDXProvider components={{ CompareLang, CompareTab}}>
         <PrimaryLayout location={location} title={siteTitle}>
           <SEO title={post.frontmatter.title} description={post.excerpt} />
           <h1>{post.frontmatter.title}</h1>
