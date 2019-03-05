@@ -32,9 +32,9 @@ const StyledCardPrimaryContent = styled(CardContent)`
 `;
 const StyledCardActionArea = styled(CardActionArea)`
   padding: ${rhythm(1 / 4)}
-  background-color: pink;
+  background-color:  ${props => props.theme.palette.grey[50]};
   :after, :before {
-    background-color: pink;
+    background-color:  ${props => props.theme.palette.grey[50]};
   }
 `;
 const Excerpt = styled.p`
