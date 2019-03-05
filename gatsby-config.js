@@ -104,6 +104,15 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `material icons`,
+          `Roboto:700|Roboto:400,400i,700,700i` // you can also specify font weights and styles
+        ]
+      }
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
