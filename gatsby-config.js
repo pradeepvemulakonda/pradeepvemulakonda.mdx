@@ -86,6 +86,24 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        theme: {
+          primaryColor: 'teal'
+        },
+        productionPrefix: 'prad'
+      }
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `teal`,
+        // Disable the loading spinner.
+        showSpinner: true
+      }
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
