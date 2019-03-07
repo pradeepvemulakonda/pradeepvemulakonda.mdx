@@ -1,7 +1,22 @@
 import React from 'react';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import theme from 'prism-react-renderer/themes/nightOwl';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import Normalizer from 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace';
+
+// Create a new Normalizer object
+var nw = new Normalizer({
+    'remove-trailing': true,
+    'remove-indent': true,
+    'left-trim': true,
+    'right-trim': true,
+	'break-lines': 80,
+	'indent': 0,
+	'remove-initial-line-feed': false,
+	'tabs-to-spaces': 4,
+	'spaces-to-tabs': 4
+});
+
 
 export const Pre = styled.pre`
   text-align: left;
@@ -22,19 +37,25 @@ export const LineNo = styled.span`
 `
 
 export default (props) => {
-    const exampleCode = props.children;
+    let exampleCode = props.children;
+    // Removes leading and trailing whitespace
+    // and then indents by 1 tab
+    exampleCode = nw.normalize(exampleCode);
+   
     return (
-        <Highlight {...defaultProps} theme={theme} code={exampleCode} language="jsx">
-            {({ className, style, tokens, getLineProps, getTokenProps }) => (
-                <Pre className={className} style={style}>
-                    {tokens.map((line, i) => (
-                        <div {...getLineProps({ line, key: i }) }>
-                            <LineNo>{i + 1}</LineNo>
-                            {line.map((token, key) => <span {...getTokenProps({ token, key }) } />)}
-                        </div>
-                    ))}
-                </Pre>
-            )}
-        </Highlight>
+        <code>
+            <Highlight {...defaultProps} theme={theme} code={exampleCode} language="jsx">
+                {({ className, style, tokens, getLineProps, getTokenProps }) => (
+                    <Pre className={className} style={style}>
+                        {tokens.map((line, i) => (
+                            <div {...getLineProps({ line, key: i }) }>
+                                {/*<LineNo>{i + 1}</LineNo>*/}
+                                {line.map((token, key) => <span {...getTokenProps({ token, key }) } />)}
+                            </div>
+                        ))}
+                    </Pre>
+                )}
+            </Highlight>
+        </code>
     );
 };
