@@ -11,7 +11,7 @@ toc: true
 
 import CompareLang from 'components/compare/compare-lang';
 import CompareTab from 'components/compare/tab';
-import {MDXTag} from '@mdx-js/tag'
+import CodeBlock from 'components/code-block';
 
 Introduction to C# and Java type systems. Links to details are provided for reference.
 
@@ -33,14 +33,15 @@ This topic contains the following sections:
 
 <CompareLang>
     <CompareTab>
-     <MDXTag name="code" children={
-       `
-       class Java {
-         
-       }
-       `
-     } >
-     </MDXTag>
+      <CodeBlock>
+        {
+          `
+          class Java {
+              
+          }
+        `
+        }
+      </CodeBlock>
     </CompareTab>
     <CompareTab>
       test
