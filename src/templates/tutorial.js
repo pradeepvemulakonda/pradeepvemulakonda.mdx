@@ -4,18 +4,20 @@ import TutorialLayout from '../layout/tutorial-layout';
 import SEO from '../components/seo';
 import { rhythm, scale } from '../utils/typography';
 import PropTypes from 'prop-types';
-import MDXRenderer from 'gatsby-mdx/mdx-renderer'
-import { MDXProvider } from '@mdx-js/tag'
+import MDXRenderer from 'gatsby-mdx/mdx-renderer';
+import { MDXProvider } from '@mdx-js/tag';
 
 class TutorialTemplate extends React.Component {
+
+
   render() {
     const { data, location, pageContext } = this.props;
     const post = data.allMdx.edges[0].node;
     const siteTitle = data.site.siteMetadata.title;
     const { previous, next } = pageContext;
+    console.log('===>', this.props);
 
     return (
-      <MDXProvider components={{}}>
         <TutorialLayout location={location} title={siteTitle}>
           <SEO title={post.frontmatter.title} description={post.excerpt} />
           <h1>{post.frontmatter.title}</h1>
@@ -63,7 +65,6 @@ class TutorialTemplate extends React.Component {
             </li>
           </ul>
         </TutorialLayout>
-      </MDXProvider>
     );
   }
 }
