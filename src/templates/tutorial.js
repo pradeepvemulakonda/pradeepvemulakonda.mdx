@@ -15,7 +15,6 @@ class TutorialTemplate extends React.Component {
     const post = data.allMdx.edges[0].node;
     const siteTitle = data.site.siteMetadata.title;
     const { previous, next } = pageContext;
-    console.log('===>', this.props);
 
     return (
         <TutorialLayout location={location} title={siteTitle}>

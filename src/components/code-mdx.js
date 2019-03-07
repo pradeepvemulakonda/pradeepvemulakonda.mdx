@@ -22,7 +22,6 @@ export const LineNo = styled.span`
 `
 
 export default (props) => {
-    console.log('==``````~~~~~~>', props);
     const exampleCode = props.children;
     return (
         <Highlight {...defaultProps} theme={theme} code={exampleCode} language="jsx">

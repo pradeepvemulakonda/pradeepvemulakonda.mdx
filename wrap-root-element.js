@@ -12,14 +12,12 @@ const components = {
         if (props) {
             return <Code {...props} />
         } else {
-            // it's possible to have a pre without a code in it
             return <Code {...preProps} />
         }
     }
 }
 
 const wrapRootElement = ({ element }) => {
-    console.log('********>>', 'in the wrap root', Code);
     return (
         <MDXProvider components={components} name="mdx-provider">{element}</MDXProvider>
     )

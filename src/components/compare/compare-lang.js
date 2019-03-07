@@ -30,7 +30,6 @@ export default class CompareLang extends React.Component {
   render () {
     const { children } = this.props;
     const filteredChildren = this.filterChildren(children, (child) => typeof child === 'object');
-    console.log(filteredChildren);
     return (
       <Paper square>
         <Tabs
