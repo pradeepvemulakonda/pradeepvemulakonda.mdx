@@ -8,5 +8,21 @@
   items:
     - title: Introduction
       link: /tutorials/csharp/01-Csharp_vs_Java/
+    - title: String
+      link: /tutorials/csharp/01-Csharp_String/
+    - title: Classes
+      link: /tutorials/csharp/02-csharp_vs_Classes/
+    - title: Interfaces
+      link: /tutorials/csharp/01-Csharp_Interfaces/
+    - title: Abstract
+      link: /tutorials/csharp/02-csharp_vs_Java_Abstracts/
+    - title: Utilities
+      link: /tutorials/csharp/01-Csharp_vs_Java_utils/
+    - title: IP
+      link: /tutorials/csharp/02-csharp_vs_java_io/
+    - title: Threads
+      link: /tutorials/csharp/01-Csharp_vs_Java_thread/
+    - title: Collections
+      link: /tutorials/csharp/02-csharp_vs_java_collections/
     - title: Types
       link: /tutorials/csharp/02-csharp_vs_java_types/

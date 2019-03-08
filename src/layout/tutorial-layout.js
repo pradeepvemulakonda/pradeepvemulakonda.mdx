@@ -47,10 +47,6 @@ class TutorialLayout extends React.Component {
                 items {
                   title
                   link
-                  items {
-                    title
-                    link
-                  }
                 }
               }
             }
