@@ -12,6 +12,7 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import { navigate } from 'gatsby';
 import scrollToComponent from 'react-scroll-to-component';
+import Item from './item';
 
 class SideBarEntry extends React.Component {
   constructor(props) {
@@ -32,43 +33,42 @@ class SideBarEntry extends React.Component {
     );
   };
 
+
+
+  buildChildren(node, selection) {
+    return (
+    <React.Fragment>
+      <ListItem button onClick={node.items ? this.handleClick : this.activateLink(node.link)} key={node.title}>
+        <ListItemText primary={node.title} />
+        {node.items && (this.state.open ? <ExpandLess /> : <ExpandMore />)}
+      </ListItem>
+      {
+        node.items &&
+        <List>
+          {
+            node.items.map((item, index) => (
+                <Collapse in={this.state.open || selection.startsWith(node.name)} timeout='auto' unmountOnExit key={item.title}>
+                  {item.items ? this.buildChildren(item, selection) : <Item item={item} selection={selection} />}
+              </Collapse>
+            ))
+          }
+        </List>
+      }
+      
+    </React.Fragment>
+    )
+  }
+
+
+
   render() {
-    const { edge } = this.props;
+    const { edge, selection } = this.props;
     const node = edge.node;
     return (
       <List>
         <div>
-          <ListItem button onClick={node.items ? this.handleClick : this.activateLink(node.link)} key={node.title}>
-            <ListItemText primary={node.title} />
-            {node.items && (this.state.open ? <ExpandLess /> : <ExpandMore />)}
-          </ListItem>
-          {node.items &&
-            <List>
-              {node.items.map((item, index) => (
-                <Collapse in={this.state.open} timeout='auto' unmountOnExit key={item.title}>
-                  <ListItem button component='a' name={item.link} ref={
-                    nodeRef => {
-                      if (this.props.selection === item.link) {
-                        scrollToComponent(nodeRef, { offset: 0, align: 'middle', duration: 500, ease: 'inCirc' });
-                      }
-                    }
-                  }
-                    onClick={() => {
-                      navigate(
-                        item.link,
-                        { replace: false }
-                      );
-                    }
-                    }
-                  >
-                    <ListItemIcon>{this.props.selection === item.link ? <SelectedIcon /> : ''}</ListItemIcon>
-                    
-                    <ListItemText primary={item.title} />
-                  </ListItem>
-                </Collapse>
-              )
-              )}
-            </List>
+          {
+            this.buildChildren(node, selection)
           }
         </div>
       </List>

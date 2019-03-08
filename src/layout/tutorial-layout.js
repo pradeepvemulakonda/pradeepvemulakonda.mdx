@@ -43,9 +43,14 @@ class TutorialLayout extends React.Component {
                 link
                 ui
                 title
+                name
                 items {
                   title
                   link
+                  items {
+                    title
+                    link
+                  }
                 }
               }
             }
@@ -60,7 +65,7 @@ class TutorialLayout extends React.Component {
                 <TutorialHeader handleClick={() => this.toggleDrawer('left', true)} />
                 <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}
                   variant='temporary'>
-                  <SideBar edges={data.allTutorialDrawerYaml.edges} location={location}/>
+                  <SideBar edges={data.allTutorialDrawerYaml.edges} location={location} />
                 </Drawer>
                 <div
                   style={{

@@ -4,6 +4,7 @@
   ui: main
 - title: CSharp (C#)
   ui: main
+  name: /tutorials/csharp/
   items:
     - title: Introduction
       link: /tutorials/csharp/01-Csharp_vs_Java/
