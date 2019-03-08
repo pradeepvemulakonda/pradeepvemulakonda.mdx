@@ -24,12 +24,13 @@ class SideBar extends React.Component {
   };
 
   render () {
-    const { edges } = this.props;
+    const { edges, location } = this.props;
+    console.log(location);
     return (
       <StyledList>
         {edges.map((edge, index) => (
           <React.Fragment key={index}>
-            <SideBarEntry edge={edge} />
+            <SideBarEntry edge={edge} selection={location.pathname}/>
             <Divider />
           </React.Fragment>
         ))}

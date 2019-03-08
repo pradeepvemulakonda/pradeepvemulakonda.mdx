@@ -32,7 +32,7 @@ class TutorialLayout extends React.Component {
   };
 
   render () {
-    const { children } = this.props;
+    const { children, location } = this.props;
     return (<StaticQuery
       query={graphql`
         query TutorialHeaderQuery {
@@ -60,7 +60,7 @@ class TutorialLayout extends React.Component {
                 <TutorialHeader handleClick={() => this.toggleDrawer('left', true)} />
                 <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}
                   variant='temporary'>
-                  <SideBar edges={data.allTutorialDrawerYaml.edges} />
+                  <SideBar edges={data.allTutorialDrawerYaml.edges} location={location}/>
                 </Drawer>
                 <div
                   style={{
