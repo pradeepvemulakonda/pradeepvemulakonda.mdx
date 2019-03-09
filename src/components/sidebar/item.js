@@ -30,9 +30,10 @@ export default class Item extends React.Component {
                     );
                 }
                 }
+                selected={selection === item.link}
             >
                 
-                <ListItemIcon>{this.props.selection === item.link ? <SelectedIcon /> : <p></p>}</ListItemIcon>
+                <ListItemIcon></ListItemIcon>
                 <ListItemText primary={item.title} />
             </ListItem>
             <div ref={this.currentNode} tabIndex={-1}></div>
