@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import PropTypes from 'prop-types';
+import { navigate } from 'gatsby';
 
 const StyledTopAppBar = styled(AppBar)`
   background-color: ${props => props.theme.pbg};
@@ -42,6 +43,12 @@ const NavigationHeader = (props) => {
             aria-label='Profile'
             aria-haspopup='true'
             color='inherit'
+            onClick={() => {
+              navigate(
+                '/profile',
+                { replace: false }
+              );
+            }}
           >
             <AccountCircle />
           </IconButton>

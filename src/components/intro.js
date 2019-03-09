@@ -9,7 +9,7 @@ function Intro () {
     <StaticQuery
       query={introQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata;
+        const { author } = data.site.siteMetadata;
         return (
           <div
             style={{

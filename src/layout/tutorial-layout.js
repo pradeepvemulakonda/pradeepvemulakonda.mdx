@@ -1,6 +1,6 @@
 import React from 'react';
 import { rhythm } from '../utils/typography';
-import TutorialHeader from '../components/header/header-tutorial';
+import NavigationHeader from '../components/header/header';
 import FooterBar from '../components/footer/footer';
 import { ThemeProvider } from 'styled-components';
 import { MuiTheme } from '../theme/theme';
@@ -58,7 +58,7 @@ class TutorialLayout extends React.Component {
           <ThemeProvider theme={MuiTheme}>
             <MuiThemeProvider theme={MuiTheme}>
               <div>
-                <TutorialHeader handleClick={() => this.toggleDrawer('left', true)} />
+                <NavigationHeader handleClick={() => this.toggleDrawer('left', true)} />
                 <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}
                   variant='temporary'>
                   <SideBar edges={data.allTutorialDrawerYaml.edges} location={location} />

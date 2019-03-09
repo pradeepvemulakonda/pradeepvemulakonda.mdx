@@ -1,5 +1,8 @@
 import gray from 'gray-percentage';
 import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants';
+import TEAL from '@material-ui/core/colors/teal';
+
+const linkColor = TEAL[700];
 
 const theme = {
   title: 'Pradeep',
@@ -26,12 +29,6 @@ const theme = {
     'h1,h2,h3': {
       lineHeight: 1.1
     },
-
-    'h4, h5, h6': {
-      lineHeight: 1.1,
-      marginBottom: rhythm(1 / 2),
-      marginTop: rhythm(1)
-    },
     a: {
       color: 'teal',
       textDecoration: 'none'
@@ -39,35 +36,37 @@ const theme = {
     'a:hover,a:active': {
       color: options.bodyColor
     },
+    // Blockquote styles.
     blockquote: {
       ...scale(1 / 5),
-      color: gray(41),
-      fontStyle: 'italic',
-      paddingLeft: rhythm(13 / 16),
+      borderLeft: `${rhythm(6 / 16)} solid ${linkColor}`,
+      color: gray(35),
+      paddingLeft: rhythm(10 / 16),
+      fontStyle: "italic",
       marginLeft: 0,
-      borderLeft: `${rhythm(3 / 16)} solid ${gray(10)}`
+      marginRight: 0,
     },
-    'blockquote > :last-child': {
-      marginBottom: 0
+    "blockquote > :last-child": {
+      marginBottom: 0,
     },
-    'blockquote cite': {
+    "blockquote cite": {
       ...adjustFontSizeTo(options.baseFontSize),
       color: options.bodyColor,
-      fontWeight: options.bodyWeight
+      fontStyle: "normal",
+      fontWeight: options.bodyWeight,
     },
-    'blockquote cite:before': {
-      content: '"— "'
+    "blockquote cite:before": {
+      content: '"— "',
     },
     [MOBILE_MEDIA_QUERY]: {
-      html: {
-        fontSize: `${16 / 16 * 100}%`
-      },
       blockquote: {
+        borderLeft: `${rhythm(3 / 16)} solid ${linkColor}`,
+        paddingLeft: rhythm(9 / 16),
+        fontStyle: "italic",
         marginLeft: rhythm(-3 / 4),
         marginRight: 0,
-        paddingLeft: rhythm(9 / 16)
-      }
-    }
+      },
+    },
   })
 };
 
