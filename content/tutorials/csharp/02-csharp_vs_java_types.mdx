@@ -9,10 +9,6 @@ staticman.branch: master
 toc: true
 ---
 
-import CompareLang from 'components/compare/compare-lang';
-import CompareTab from 'components/compare/tab';
-import CodeBlock from 'components/code-block';
-
 Introduction to C# and Java type systems. Links to details are provided for reference.
 
 Both specifications defines how types are declared, used, and managed in the language runtime([VES](https://en.wikipedia.org/wiki/Virtual_Execution_System), [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine)) and is also an important part of the runtime's support for cross-language integration.
@@ -31,29 +27,14 @@ This topic contains the following sections:
 
 #### <a name="headTypes"></a> Types
 
-<CompareLang>
-    <CompareTab>
-      This is the change for jumbolabamba
-      <CodeBlock>
-        {
-          `
-          class Java {
-              public static String test = "testing";
-          }
-         `
-        }
-      </CodeBlock>
-    </CompareTab>
-    <CompareTab>
-      This is the change for jumbolabamba
-      <CodeBlock>
-        {
-          `
-          class Java {
-              public static String test = "testing";
-          }
-         `
-        }
-      </CodeBlock>
-    </CompareTab>
-</CompareLang>
+```compare
+//C#
+public class Csharp {
+
+}
+
+//Java
+public class Java {
+
+}
+```
