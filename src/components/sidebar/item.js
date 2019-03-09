@@ -4,29 +4,25 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import SelectedIcon from '@material-ui/icons/Remove';
 import { navigate } from 'gatsby';
-import scrollToComponent from 'react-scroll-to-component';
 
 export default class Item extends React.Component {
     constructor(props) {
         super(props);
-        this.currentNode = null;
+        this.currentNode = React.createRef();
     }
 
     componentDidMount() {
-        console.log(this.currentNode);
-        scrollToComponent(this.currentNode);
+        const { item, selection } = this.props;
+        if (selection === item.link) {
+            this.currentNode.current.scrollIntoView(false);
+        }
     }
 
     render() {
         const { item, selection} = this.props
         return (
-            <ListItem button component='a' name={item.link} ref={
-                nodeRef => {
-                    if (selection === item.link) {
-                        this.currentNode = nodeRef;
-                    }
-                }
-            }
+            <div>
+            <ListItem button component='a' name={item.link} 
                 onClick={() => {
                     navigate(
                         item.link,
@@ -35,9 +31,12 @@ export default class Item extends React.Component {
                 }
                 }
             >
+                
                 <ListItemIcon>{this.props.selection === item.link ? <SelectedIcon /> : <p></p>}</ListItemIcon>
                 <ListItemText primary={item.title} />
-            </ListItem>);
+            </ListItem>
+            <div ref={this.currentNode} tabIndex={-1}></div>
+        </div>);
     }
 
 }
