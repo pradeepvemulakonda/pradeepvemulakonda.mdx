@@ -24,7 +24,7 @@ class PrimaryLayout extends React.Component {
   };
 
   render () {
-    const { children } = this.props;
+    const { children, location } = this.props;
     return (<StaticQuery
       query={graphql`
         query HeaderQuery {
@@ -52,7 +52,7 @@ class PrimaryLayout extends React.Component {
                 <NavigationHeader handleClick={() => this.toggleDrawer('left', true)} />
                 <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}
                   variant='temporary'>
-                  <SideBar edges={data.allMainDrawerYaml.edges} />
+                  <SideBar edges={data.allMainDrawerYaml.edges} location={location}/>
                 </Drawer>
                 <div
                   style={{

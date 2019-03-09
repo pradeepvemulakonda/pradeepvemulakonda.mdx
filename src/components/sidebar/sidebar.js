@@ -25,6 +25,7 @@ class SideBar extends React.Component {
 
   render () {
     const { edges, location } = this.props;
+    console.log('==>', location);
     return (
       <StyledList>
         {edges.map((edge, index) => (

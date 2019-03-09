@@ -5,7 +5,6 @@ import SEO from '../components/seo';
 import { rhythm, scale } from '../utils/typography';
 import PropTypes from 'prop-types';
 import MDXRenderer from 'gatsby-mdx/mdx-renderer';
-import { MDXProvider } from '@mdx-js/tag';
 
 class TutorialTemplate extends React.Component {
 

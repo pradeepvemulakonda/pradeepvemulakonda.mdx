@@ -2,16 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import SelectedIcon from '@material-ui/icons/Remove';
-import MailIcon from '@material-ui/icons/Mail';
 import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import { navigate } from 'gatsby';
-import scrollToComponent from 'react-scroll-to-component';
 import Item from './item';
 
 class SideBarEntry extends React.Component {
