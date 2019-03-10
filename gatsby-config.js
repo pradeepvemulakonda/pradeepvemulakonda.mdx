@@ -72,7 +72,7 @@ module.exports = {
           },
           {
             resolve: `gatsby-remark-source-name`,
-          }
+          },
         ],
       },
     },

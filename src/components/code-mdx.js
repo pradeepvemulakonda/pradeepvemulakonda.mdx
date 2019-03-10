@@ -1,66 +1,63 @@
 import React from 'react';
-import Highlight, { defaultProps } from 'prism-react-renderer';
-import theme from 'prism-react-renderer/themes/nightOwl';
-import styled from 'styled-components';
-import Normalizer from 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace';
-import CompareLang from 'components/compare/compare-lang';
-import CompareTab from 'components/compare/tab';
+import CompareLang from '../components/compare/compare-lang';
+import CompareTab from '../components/compare/tab';
+import remark from 'remark';
+import react2remark from 'remark-react';
+import CodeBlock from './code-block';
+import { filterChildren } from '../utils/utils';
 
-// Create a new Normalizer object
-var nw = new Normalizer({
-    'remove-trailing': true,
-    'remove-indent': true,
-    'left-trim': true,
-    'right-trim': true,
-    'break-lines': 80,
-    'indent': 0,
-    'remove-initial-line-feed': false,
-    'tabs-to-spaces': 4,
-    'spaces-to-tabs': 4
-});
+const buildCompareComponent = (components) => {
+    const tabWrapperData = [];
+    let tabData = [];
 
-
-export const Pre = styled.pre`
-  text-align: left;
-  margin: 1em 0;
-  padding: 0.5em;
-
-  & .token-line {
-    line-height: 1.3em;
-    height: 1.3em;
-  }
-`
-
-export const LineNo = styled.span`
-  display: inline-block;
-  width: 2em;
-  user-select: none;
-  opacity: 0.3;
-`
-
-export default (props) => {
-    let exampleCode = props.children;
-    console.log('-->', props);
-    // Removes leading and trailing whitespace
-    // and then indents by 1 tab
-    exampleCode = nw.normalize(exampleCode);
+    components.forEach((component) => {
+        if (component.type === 'hr') {
+            tabData = [];
+            tabWrapperData.push(tabData);
+        } else {
+            tabData.push(component);
+        }
+    });
 
     return (
         <CompareLang>
-            <CompareTab>
-                <Highlight {...defaultProps} theme={theme} code={exampleCode} language="jsx">
-                    {({ className, style, tokens, getLineProps, getTokenProps }) => (
-                        <Pre className={className} style={style}>
-                            {tokens.map((line, i) => (
-                                <div {...getLineProps({ line, key: i }) }>
-                                    {/*<LineNo>{i + 1}</LineNo>*/}
-                                    {line.map((token, key) => <span {...getTokenProps({ token, key }) } />)}
-                                </div>
-                            ))}
-                        </Pre>
-                    )}
-                </Highlight>
-            </CompareTab>
-        </CompareLang>        
-    );
+            {
+                tabWrapperData.map(function (component, index) {
+                    return <CompareTab>{component}</CompareTab>;
+                })
+            }
+        </CompareLang>
+    )
+}
+
+export default (props) => {
+    const { className, children } = props;
+    const exampleCode = children;
+
+    if (className === 'language-compare') {
+        const vFile = remark()
+            .use(react2remark,
+            {
+                createElement: React.createElement,
+                remarkReactComponents: {
+                    code: CodeBlock
+                }
+            }
+            ).processSync(exampleCode);
+
+        const filteredChildren = filterChildren(vFile.contents.props.children, (child) => typeof child === 'object');
+        if (filteredChildren[0].type !== 'hr') throw Error('compare should start with hr');
+
+        return (
+            <div>
+                {buildCompareComponent(filteredChildren)}
+            </div>
+        );
+    } else {
+        return (
+            <div>
+                <CodeBlock>{exampleCode}</CodeBlock>
+            </div>
+        );
+    }
 };
