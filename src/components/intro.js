@@ -21,9 +21,11 @@ function Intro () {
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
               style={{
-                marginRight: rhythm(1 / 2),
                 marginBottom: 0,
-                borderRadius: `100%`
+                borderRadius: `100%`,
+                display: 'block',
+                marginLeft: 'auto',
+	              marginRight: 'auto'
               }}
               imgStyle={{
                 borderRadius: `50%`
