@@ -20,6 +20,10 @@ const Role = styled.div`
   margin: auto;
 `;
 
+const GitHubFollow = styled.div`
+  margin: auto;
+`;
+
 const Intro = () => {
   return (
     <StaticQuery
@@ -51,9 +55,12 @@ const Intro = () => {
             <Details>
                 <Name>Bhaskara Pradeep Vemulakonda</Name>
                 <Role>Senior Solutions Designer at Westpac</Role>
-                <GitHubButton href="https://github.com/pradeepvemulakonda" data-size="large" aria-label="Follow @pradeepvemulakonda on GitHub">
-                  Follow @pradeepvemulakonda
-                </GitHubButton>
+                <GitHubFollow>
+                <GitHubButton 
+                  href="https://github.com/pradeepvemulakonda" data-size="large" aria-label="Follow @pradeepvemulakonda on GitHub">
+                    Follow @pradeepvemulakonda
+                  </GitHubButton>
+                </GitHubFollow>
             </Details>
           </div>
         );
