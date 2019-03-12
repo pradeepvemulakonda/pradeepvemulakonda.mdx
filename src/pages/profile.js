@@ -8,7 +8,14 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { MuiTheme } from '../theme/theme';
 import { MuiThemeProvider } from '@material-ui/core/styles';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
+
+const ExpansionPanelDetailsStyled = styled(ExpansionPanelDetails) `
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+    }
+`;
 
 const Profile = () => (
   <ThemeProvider theme={MuiTheme}>
@@ -39,10 +46,10 @@ const Profile = () => (
             <ExpansionPanelDetails>
               <ul>
                 <li>
-                    Python, Kerastase, Dl4j, Tensorflow and IBM Watson.
+                  Python, Kerastase, Dl4j, Tensorflow and IBM Watson.
                 </li>
                 <li>
-                    React, Redux, Styled components and NodeJs.
+                  React, Redux, Styled components and NodeJs.
                 </li>
                 <li>
                   Swagger, REST, WADL, API.
@@ -62,39 +69,35 @@ const Profile = () => (
                 <li>
                   Health: Medication Management, Population Health, Electronic Health Records, Snomed-CT and FHIR.
                 </li>
-              </ul>  
+              </ul>
             </ExpansionPanelDetails>
           </ExpansionPanel>
           <ExpansionPanel>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
               Summary
             </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
-              <p>15 years of experience in Banking, Insurance and Health domains. 
+            <ExpansionPanelDetailsStyled>
+              <p>15 years of experience in Banking, Insurance and Health domains.
               Designed complex systems spanning Origination Systems, Underwriting systems and a full stack digital applications.</p>
 
               <p>Interested in Designing, Architecture, UX and Machine Learning.</p>
-            </ExpansionPanelDetails>
+            </ExpansionPanelDetailsStyled>
           </ExpansionPanel>
           <ExpansionPanel>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
               Details
             </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
-              <pre>
-                {
-        `
-          Bhaskara Pradeep Vemulakonda  
-          Senior Solutions Designer
-          Westpac
-          Sydney, Australia
-        `
-              }
-              </pre>
-              <a href="https://www.vemulakonda.com">website</a>
-              <div>|</div>
-              <a href="https://github.com/pradeepvemulakonda">GitHub</a>
-            </ExpansionPanelDetails>
+            <ExpansionPanelDetailsStyled>
+              <div>Bhaskara Pradeep Vemulakonda</div>
+              <div>Senior Solutions Designer</div>
+              <div>Westpac</div>
+              <div>Sydney, Australia</div>
+              <div>
+                <span><a href="https://www.vemulakonda.com">Website</a></span>
+                <span> | </span>
+                <span><a href="https://github.com/pradeepvemulakonda">GitHub</a></span>
+              </div>
+            </ExpansionPanelDetailsStyled>
           </ExpansionPanel>
         </div>
       </PrimaryLayout>

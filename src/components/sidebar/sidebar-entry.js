@@ -42,7 +42,7 @@ class SideBarEntry extends React.Component {
         <List>
           {
             node.items.map((item, index) => (
-                <Collapse in={this.state.open || selection.startsWith(node.name)} timeout='auto' unmountOnExit key={item.title}>
+                <Collapse in={this.state.open || (selection && selection.startsWith(node.name))} timeout='auto' unmountOnExit key={item.title}>
                   {item.items ? this.buildChildren(item, selection) : <Item item={item} selection={selection} />}
               </Collapse>
             ))
