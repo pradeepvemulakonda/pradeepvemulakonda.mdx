@@ -2,7 +2,6 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 import styled from 'styled-components';
-import GitHubButton from 'react-github-btn'
 
 import { rhythm } from '../utils/typography';
 
@@ -56,10 +55,10 @@ const Intro = () => {
                 <Name>Bhaskara Pradeep Vemulakonda</Name>
                 <Role>Senior Solutions Designer at Westpac</Role>
                 <GitHubFollow>
-                <GitHubButton 
-                  href="https://github.com/pradeepvemulakonda" data-size="large" aria-label="Follow @pradeepvemulakonda on GitHub">
+                <a 
+                  href="https://github.com/pradeepvemulakonda" aria-label="Follow @pradeepvemulakonda on GitHub">
                     Follow @pradeepvemulakonda
-                  </GitHubButton>
+                  </a>
                 </GitHubFollow>
             </Details>
           </div>
