@@ -64,7 +64,7 @@ const Profile = () => (
                   Retail Banking products: Persoanl Loans,Cards, Cards Servicing, Payments and Payments API.
                 </li>
                 <li>
-                  Insuarnce: Underwriting, Claims, Policy and servicing (LOMA certfified).
+                  Insurance: Underwriting, Claims, Policy and servicing (LOMA certfified).
                 </li>
                 <li>
                   Health: Medication Management, Population Health, Electronic Health Records, Snomed-CT and FHIR.
