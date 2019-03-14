@@ -37,7 +37,7 @@ module.exports = {
         path: `${__dirname}/content/assets`,
         name: `assets`,
       },
-    },{
+    }, {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/tutorials`,
@@ -184,6 +184,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
