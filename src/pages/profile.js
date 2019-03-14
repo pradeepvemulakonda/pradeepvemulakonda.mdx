@@ -65,7 +65,7 @@ const Profile = () => (
                 </li>
                 <li>
                   Insuarnce: Underwriting, Claims, Policy and servicing (LOMA certified).
-                </li>
+               </li>
                 <li>
                   Health: Medication Management, Population Health, Electronic Health Records, Snomed-CT and FHIR.
                 </li>
