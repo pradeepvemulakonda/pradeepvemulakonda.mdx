@@ -1,4 +1,5 @@
 # Personal Blog starter
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c2418787-37cb-4078-8337-aebd05a745f3/deploy-status)](https://app.netlify.com/sites/gallant-northcutt-5f0190/deploys)
 
 > Live demo: 
 > [view demo](https://blog.vemulakonda.com)
