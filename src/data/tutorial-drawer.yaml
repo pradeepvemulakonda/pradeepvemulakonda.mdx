@@ -26,3 +26,13 @@
       link: /tutorials/csharp/02-csharp_vs_java_collections/
     - title: Types
       link: /tutorials/csharp/02-csharp_vs_java_types/
+- title: Java
+  ui: main
+  name: /tutorials/java/
+  items:
+    - title: Atom
+      link: /tutorials/java/01_atoms/
+    - title: Orbitals
+      link: /tutorials/java/02_orbitals/
+    - title: Introduction to Java
+      link: /tutorials/java/00_java_introduction/
