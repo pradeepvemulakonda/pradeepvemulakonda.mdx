@@ -1,15 +1,25 @@
-# Gatsby Starter MDX Basic
+# Personal Blog starter
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c2418787-37cb-4078-8337-aebd05a745f3/deploy-status)](https://app.netlify.com/sites/gallant-northcutt-5f0190/deploys)
 
-View this starter [live on Netlify](https://gatsby-starter-mdx-basic.netlify.com/)
+> Live demo: 
+> [view demo](https://blog.vemulakonda.com)
 
-This starter build MDX support into the
-[gatsby-default-starter](https://github.com/gatsbyjs/gatsby-starter-default). Its
-README also applies here.
+This project uses Gatsby and mdx for blogging and tutorials.
 
-1. Create a new Gatsby site using this starter
+The following frameworks are used
+- Material-UI
+- Gatsby
+- mdx
+- prisimjs
+- styled-components
+- react
+- remark
+- sharp
+
+1. Clone the repository
 
 ```sh
-gatsby new my-site https://github.com/ChristopherBiscardi/gatsby-starter-mdx-basic
+git clone https://github.com/pradeepvemulakonda/pradeepvemulakonda.mdx.git
 ```
 
 2. Install dependencies
@@ -21,7 +31,20 @@ yarn
 3. Run the develop script
 
 ```sh
-yarn develop
+gatsby develop
 ```
 
-4. Edit Page 2 in `src/pages/page-2.mdx`
+4. For Prdouction build
+```sh
+gatsby build && gatsby serve
+```
+
+5. Add your pages to in `content/blog/*.mdx`
+
+6. Add your tutorials unser `content/tutorila/<subject>/*.mdx`
+
+7. Update the sub-menu in yaml files at `src/data/*.yaml`
+
+8. To customise the layouts modify `src/layouts/*.js`
+
+9. To customise the templates modify `src/templates/*.js`
