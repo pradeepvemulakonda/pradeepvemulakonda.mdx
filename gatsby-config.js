@@ -73,6 +73,9 @@ module.exports = {
           {
             resolve: `gatsby-remark-source-name`,
           },
+          {
+            resolve: `gatsby-remark-responsive-iframe`
+          }
         ],
       },
     },
