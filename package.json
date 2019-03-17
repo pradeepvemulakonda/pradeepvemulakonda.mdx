@@ -75,7 +75,8 @@
     "typography-breakpoint-constants": "^0.16.18",
     "typography-theme-fairy-gates": "^0.16.18",
     "typography-theme-sutro": "^0.16.18",
-    "typography-theme-wordpress-2016": "^0.15.10"
+    "typography-theme-wordpress-2016": "^0.15.10",
+    "yarn": "^1.13.0"
   },
   "keywords": [
     "gatsby"

@@ -2,30 +2,30 @@
 - title: Home
   link: /
   ui: main
-- title: CSharp (C#)
+- title: csharp (C#)
   ui: main
   name: /tutorials/csharp/
   items:
     - title: Introduction
-      link: /tutorials/csharp/01-Csharp_vs_Java/
+      link: /tutorials/csharp/01_csharp_vs_java/
     - title: String
-      link: /tutorials/csharp/01-Csharp_String/
+      link: /tutorials/csharp/01_csharp_string/
     - title: Classes
-      link: /tutorials/csharp/02-csharp_vs_Classes/
+      link: /tutorials/csharp/02_csharp_vs_classes/
     - title: Interfaces
-      link: /tutorials/csharp/01-Csharp_Interfaces/
+      link: /tutorials/csharp/01_csharp_interfaces/
     - title: Abstract
-      link: /tutorials/csharp/02-csharp_vs_Java_Abstracts/
+      link: /tutorials/csharp/02_csharp_vs_java_Abstracts/
     - title: Utilities
-      link: /tutorials/csharp/01-Csharp_vs_Java_utils/
+      link: /tutorials/csharp/01_csharp_vs_java_utils/
     - title: IP
-      link: /tutorials/csharp/02-csharp_vs_java_io/
+      link: /tutorials/csharp/02_csharp_vs_java_io/
     - title: Threads
-      link: /tutorials/csharp/01-Csharp_vs_Java_thread/
+      link: /tutorials/csharp/01_csharp_vs_java_thread/
     - title: Collections
-      link: /tutorials/csharp/02-csharp_vs_java_collections/
+      link: /tutorials/csharp/02_csharp_vs_java_collections/
     - title: Types
-      link: /tutorials/csharp/02-csharp_vs_java_types/
+      link: /tutorials/csharp/02_csharp_vs_java_types/
 - title: Java
   ui: main
   name: /tutorials/java/

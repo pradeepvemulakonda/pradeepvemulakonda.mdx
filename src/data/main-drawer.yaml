@@ -6,6 +6,6 @@
   ui: steps
   items:
     - title: CSharp (C#)
-      link: /tutorials/csharp/01-Csharp_vs_Java/
+      link: /tutorials/csharp/01_csharp_vs_java/
     - title: Java
-      link: /tutorials/java/01-atoms/
+      link: /tutorials/java/01_atoms/
