@@ -11,8 +11,6 @@ export default function HTML (props) {
           name='viewport'
           content='width=device-width, initial-scale=1, shrink-to-fit=no'
         />
-        <link href='https://fonts.googleapis.com/icon?family=Material+Icons'
-          rel='stylesheet' />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
