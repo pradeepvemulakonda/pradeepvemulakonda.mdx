@@ -8,12 +8,14 @@ const NotFoundPage = () => (
   <StaticQuery
       query={NotFoundQuery}
       render={data => {
-        const { image } = data.notFoundImage.childImageSharp.fixed;
+        debugger;
+        console.log('==>', data.notFoundImage.childImageSharp.fluid);
+        const image  = data.notFoundImage.childImageSharp.fluid;
         return (
           <Layout>
             <SEO title="404: Not found" />
             <Image
-                fixed={image}
+                fluid={image}
                 alt='NOT FOUND'
                 style={{
                   marginBottom: 0,
@@ -40,8 +42,8 @@ const NotFoundQuery = graphql`
   query NotFoundQuery {
     notFoundImage: file(absolutePath: { regex: "/404.jpg/" }) {
       childImageSharp {
-        fixed(width: 600, height: 400) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
