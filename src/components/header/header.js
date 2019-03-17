@@ -59,7 +59,6 @@ const NavigationHeader = (props) => {
 };
 
 NavigationHeader.propTypes = {
-  classes: PropTypes.object.isRequired,
   handleClick: PropTypes.func.isRequired
 };
 

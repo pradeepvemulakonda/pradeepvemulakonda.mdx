@@ -32,7 +32,7 @@
   items:
     - title: Atom
       link: /tutorials/java/01_atoms/
-    - title: Orbitals
-      link: /tutorials/java/02_orbitals/
+    - title: Bands
+      link: /tutorials/java/02_bands/
     - title: Introduction to Java
       link: /tutorials/java/00_java_introduction/
