@@ -11,9 +11,9 @@ toc: true
 
 ---
 import ResponsiveEmbed from 'react-responsive-embed'
-import FermiDirac from './fd.svg'
-import FermiVsTemp from './Fermi.gif'
-import BandSemiConductor from './ffun.png'
+import Cubic from './cubic.svg'
+import BodyCenteredCubic from './lbc_cubic.svg'
+import FaceCenteredCubic from './lfc_cubic.svg'
 
 ### Solid materials
 Solid materials are classified by the way the atoms are arranged within the solid.([1](https://ecee.colorado.edu/~bart/book/book/chapter2/ch2_2.htm))
@@ -23,32 +23,34 @@ Materials in which atoms are placed at random are called amorphous.
 
 #### Crystals
 Materials in which atoms are placed in a highly ordered structure are called crystalline.
+Crystals are categorized by their crystal structure and the underlying lattice. 
+While some crystals have a single atom placed at each lattice point, most crystals have a combination of atoms associated with each lattice point. 
+This combination of atoms is also called the basis.
 
 #### Crystalline [semiconductors](https://en.wikipedia.org/wiki/Semiconductor)
+The classification of lattices, the common semiconductor crystal structures and the growth of single-crystal semiconductors are discussed in the following sections.([2](https://ecee.colorado.edu/~bart/book/book/chapter2/ch2_2.htm))
 
-#### Distribution graph
+##### Bravais lattices
+The Bravais lattices are the distinct lattice types, which when repeated can fill the whole space.
+The three cubic Bravais lattices are the simple cubic lattice, the body-centered cubic lattice and the face-centered cubic lattice as shown 
+
+###### Simple cubic
 <figure>
-    <img src={FermiDirac} alt="Fermi Dirac distribution"></img>
+ <img src={Cubic} alt="Simple cubic"></img>
 </figure>
 
-#### Distribution vs temperature
+###### Body centered cubic
 <figure>
- <img src={FermiVsTemp} alt="Fermi Dirac distribution vs temperature"></img>
+ <img src={BodyCenteredCubic} alt="Body centered cubice"></img>
 </figure>
 
-
-[2](http://hyperphysics.phy-astr.gsu.edu/hbase/Solids/Fermi.html)
-The basic nature of this function dictates that at ordinary temperatures, most of the levels up to the Fermi level EF are filled, 
-and relatively few electrons have energies above the Fermi level. 
-
-The illustration below shows the implications of the Fermi function for the electrical conductivity of a semiconductor. 
-The band theory of solids gives the picture that there is a sizable gap between the Fermi level and the conduction band of the semiconductor. At higher temperatures, 
-a larger fraction of the electrons can bridge this gap and participate in electrical conduction.
-
-
+###### Face centered cubic
 <figure>
-    <img src={BandSemiConductor} alt="Semiconductor band and fermi level"></img>
+ <img src={FaceCenteredCubic} alt="Face centered cubice"></img>
 </figure>
 
-
-
+| Type                | Atoms/ unit cell | Package Density | Neighbours |
+|---------------------|------------------|-----------------|------------|
+| Simple Cubic        | 1                | 52%             | 6          |
+| Body centered cubic | 2                | 68%             | 8          |
+| Face centered cubic | 4                | 74%             | 12         |
