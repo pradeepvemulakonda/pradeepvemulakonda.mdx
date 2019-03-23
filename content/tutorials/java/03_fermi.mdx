@@ -1,0 +1,57 @@
+---
+layout: page-collection
+title:  "Fermi Level"
+categories: ["physics", "chemistry"]
+comments: true
+classes: wide
+repository: pradeepvemulakonda
+staticman.branch: master
+toc: true
+---
+
+---
+import ResponsiveEmbed from 'react-responsive-embed'
+import FermiDirac from './fd.svg'
+import FermiVsTemp from './Fermi.gif'
+import BandSemiConductor from './ffun.png'
+
+## Fermi Level
+
+"Fermi level" is the term used to describe the top of the collection of electron energy levels at absolute zero temperature. 
+This concept comes from Fermi-Dirac statistics. Electrons are fermions and by the Pauli exclusion principle cannot exist in identical energy states. 
+So at absolute zero they pack into the lowest available energy states and build up a "Fermi sea" of electron energy states.[1](http://hyperphysics.phy-astr.gsu.edu/hbase/Solids/Fermi.html)
+
+#### Fermi–Dirac distribution
+The Fermi function f(E) gives the probability that a given available electron energy state will be occupied at a given temperature. 
+The Fermi function comes from Fermi-Dirac statistics and has the form
+
+$$
+{\displaystyle F(\epsilon )={\frac {1}{e^{(\epsilon -\mu )/k_{\rm {B}}T}+1}}}
+$$
+
+#### Distribution graph
+<figure>
+    <img src={FermiDirac} alt="Fermi Dirac distribution"></img>
+</figure>
+
+#### Distribution vs temperature
+<figure>
+ <img src={FermiVsTemp} alt="Fermi Dirac distribution vs temperature"></img>
+</figure>
+
+
+[2](http://hyperphysics.phy-astr.gsu.edu/hbase/Solids/Fermi.html)
+The basic nature of this function dictates that at ordinary temperatures, most of the levels up to the Fermi level EF are filled, 
+and relatively few electrons have energies above the Fermi level. 
+
+The illustration below shows the implications of the Fermi function for the electrical conductivity of a semiconductor. 
+The band theory of solids gives the picture that there is a sizable gap between the Fermi level and the conduction band of the semiconductor. At higher temperatures, 
+a larger fraction of the electrons can bridge this gap and participate in electrical conduction.
+
+
+<figure>
+    <img src={BandSemiConductor} alt="Semiconductor band and fermi level"></img>
+</figure>
+
+
+

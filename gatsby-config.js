@@ -13,8 +13,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
-        name: `posts`,
-      },
+        name: `posts`
+      }
     },
     `gatsby-transformer-yaml`,
     {
@@ -28,15 +28,15 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
+        name: `assets`
+      }
     }, {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -48,44 +48,51 @@ module.exports = {
       resolve: `gatsby-mdx`,
       options: {
         defaultLayouts: {
-          default: require.resolve("./src/layout/primary-layout.js")
+          default: require.resolve('./src/layout/primary-layout.js')
         },
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
-            },
+              maxWidth: 590
+            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
+              wrapperStyle: `margin-bottom: 1.0725rem`
+            }
           },
           {
-            resolve: `gatsby-remark-copy-linked-files`,
+            resolve: `gatsby-remark-copy-linked-files`
           },
 
           {
-            resolve: `gatsby-remark-smartypants`,
+            resolve: `gatsby-remark-smartypants`
           },
           {
-            resolve: `gatsby-remark-source-name`,
+            resolve: `gatsby-remark-source-name`
           },
           {
             resolve: `gatsby-remark-responsive-iframe`
+          },
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+            // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
+              strict: `ignore`
+            }
           }
-        ],
-      },
+        ]
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
+        // trackingId: `ADD YOUR TRACKING ID HERE`,
+      }
     },
     {
       resolve: `gatsby-plugin-material-ui`,
@@ -137,14 +144,14 @@ module.exports = {
                   data: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ 'content:encoded': edge.node.code.boy }],
-                })
-              })
+                  custom_elements: [{ 'content:encoded': edge.node.code.boy }]
+                });
+              });
             },
 
             /* if you want to filter for only published posts, you can do
              * something like this:
-             * filter: { frontmatter: { published: { ne: false } } } 
+             * filter: { frontmatter: { published: { ne: false } } }
              * just make sure to add a published frontmatter field to all posts,
              * otherwise gatsby will complain
              **/
@@ -170,10 +177,10 @@ module.exports = {
             }
             `,
             output: '/rss.xml',
-            title: 'Gatsby RSS feed',
-          },
-        ],
-      },
+            title: 'Gatsby RSS feed'
+          }
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -192,8 +199,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
-  ],
-}
+        pathToConfigModule: `src/utils/typography`
+      }
+    }
+  ]
+};

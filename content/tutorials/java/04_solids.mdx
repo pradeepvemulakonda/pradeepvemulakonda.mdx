@@ -1,0 +1,54 @@
+---
+layout: page-collection
+title:  "Solids"
+categories: ["physics", "chemistry"]
+comments: true
+classes: wide
+repository: pradeepvemulakonda
+staticman.branch: master
+toc: true
+---
+
+---
+import ResponsiveEmbed from 'react-responsive-embed'
+import FermiDirac from './fd.svg'
+import FermiVsTemp from './Fermi.gif'
+import BandSemiConductor from './ffun.png'
+
+### Solid materials
+Solid materials are classified by the way the atoms are arranged within the solid.([1](https://ecee.colorado.edu/~bart/book/book/chapter2/ch2_2.htm))
+
+#### Amorphous
+Materials in which atoms are placed at random are called amorphous. 
+
+#### Crystals
+Materials in which atoms are placed in a highly ordered structure are called crystalline.
+
+#### Crystalline [semiconductors](https://en.wikipedia.org/wiki/Semiconductor)
+
+#### Distribution graph
+<figure>
+    <img src={FermiDirac} alt="Fermi Dirac distribution"></img>
+</figure>
+
+#### Distribution vs temperature
+<figure>
+ <img src={FermiVsTemp} alt="Fermi Dirac distribution vs temperature"></img>
+</figure>
+
+
+[2](http://hyperphysics.phy-astr.gsu.edu/hbase/Solids/Fermi.html)
+The basic nature of this function dictates that at ordinary temperatures, most of the levels up to the Fermi level EF are filled, 
+and relatively few electrons have energies above the Fermi level. 
+
+The illustration below shows the implications of the Fermi function for the electrical conductivity of a semiconductor. 
+The band theory of solids gives the picture that there is a sizable gap between the Fermi level and the conduction band of the semiconductor. At higher temperatures, 
+a larger fraction of the electrons can bridge this gap and participate in electrical conduction.
+
+
+<figure>
+    <img src={BandSemiConductor} alt="Semiconductor band and fermi level"></img>
+</figure>
+
+
+

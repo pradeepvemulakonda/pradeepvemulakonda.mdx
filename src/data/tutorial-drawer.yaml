@@ -34,5 +34,9 @@
       link: /tutorials/java/01_atoms/
     - title: Bands
       link: /tutorials/java/02_bands/
+    - title: Fermi
+      link: /tutorials/java/03_fermi/
+    - title: Solids
+      link: /tutorials/java/04_solids/
     - title: Introduction to Java
       link: /tutorials/java/00_java_introduction/
