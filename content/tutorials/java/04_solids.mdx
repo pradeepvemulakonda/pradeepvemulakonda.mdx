@@ -14,6 +14,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 import Cubic from './cubic.svg'
 import BodyCenteredCubic from './lbc_cubic.svg'
 import FaceCenteredCubic from './lfc_cubic.svg'
+import ResponsiveTable from 'components/responsive-table'
 
 ### Solid materials
 Solid materials are classified by the way the atoms are arranged within the solid.([1](https://ecee.colorado.edu/~bart/book/book/chapter2/ch2_2.htm))
@@ -49,8 +50,12 @@ The three cubic Bravais lattices are the simple cubic lattice, the body-centered
  <img src={FaceCenteredCubic} alt="Face centered cubice"></img>
 </figure>
 
-| Type                | Atoms/ unit cell | Package Density | Neighbours |
+<ResponsiveTable>
+
+| Type                | Atoms/           | Package Density | Neighbours |
 |---------------------|------------------|-----------------|------------|
 | Simple Cubic        | 1                | 52%             | 6          |
 | Body centered cubic | 2                | 68%             | 8          |
 | Face centered cubic | 4                | 74%             | 12         |
+
+</ResponsiveTable>
