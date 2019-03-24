@@ -82,7 +82,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-katex`,
             options: {
-            // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
+              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
               strict: `ignore`
             }
           }
@@ -113,15 +113,6 @@ module.exports = {
         color: `teal`,
         // Disable the loading spinner.
         showSpinner: true
-      }
-    },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `material icons`,
-          `Roboto:700|Roboto:400,400i,700,700i` // you can also specify font weights and styles
-        ]
       }
     },
     {

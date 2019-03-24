@@ -5323,6 +5323,7 @@ gatsby-plugin-page-creator@^2.0.8:
 gatsby-plugin-prefetch-google-fonts@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-prefetch-google-fonts/-/gatsby-plugin-prefetch-google-fonts-1.4.0.tgz#4b796adc6f33438530dd6cd9202581a66bc8f73f"
+  integrity sha512-XdQ5zyLoTAGqCSOW5ISdIs5RsUX9OdKcB8Dg4IZtdX+h5bKildGuVdjU5Ilwm3fo69tvNvGBKbZCcOh4A4ytpQ==
   dependencies:
     "@babel/runtime" "^7.2.0"
     clean-css "^4.2.1"
@@ -13235,6 +13236,11 @@ typeface-merriweather@0.0.43:
 typeface-montserrat@0.0.43:
   version "0.0.43"
   resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-0.0.43.tgz#c70d76b85ab613a9f4855c061c354eac561c1aae"
+
+typeface-roboto@^0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/typeface-roboto/-/typeface-roboto-0.0.54.tgz#8f02c9a18d1cfa7f49381a6ff0d21ff061f38ad2"
+  integrity sha512-sOFA1FXgP0gOgBYlS6irwq6hHYA370KE3dPlgYEJHL3PJd5X8gQE0RmL79ONif6fL5JZuGDj+rtOrFeOqz5IZQ==
 
 typography-breakpoint-constants@^0.15.10:
   version "0.15.10"
