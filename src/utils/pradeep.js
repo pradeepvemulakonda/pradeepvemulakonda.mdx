@@ -9,16 +9,6 @@ const theme = {
   baseFontSize: '18px',
   baseLineHeight: 1.45,
   blockMarginBottom: 0.8,
-  googleFonts: [
-    {
-      name: 'Roboto',
-      styles: ['700']
-    },
-    {
-      name: 'Roboto',
-      styles: ['400', '400i', '700', '700i']
-    }
-  ],
   headerFontFamily: ['Roboto', 'sans-serif'],
   bodyFontFamily: ['Roboto', 'sans-serif'],
   bodyColor: 'black',
