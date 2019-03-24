@@ -42,31 +42,31 @@ const theme = {
       borderLeft: `${rhythm(6 / 16)} solid ${linkColor}`,
       color: gray(35),
       paddingLeft: rhythm(10 / 16),
-      fontStyle: "italic",
+      fontStyle: 'italic',
       marginLeft: 0,
-      marginRight: 0,
+      marginRight: 0
     },
-    "blockquote > :last-child": {
-      marginBottom: 0,
+    'blockquote > :last-child': {
+      marginBottom: 0
     },
-    "blockquote cite": {
+    'blockquote cite': {
       ...adjustFontSizeTo(options.baseFontSize),
       color: options.bodyColor,
-      fontStyle: "normal",
-      fontWeight: options.bodyWeight,
+      fontStyle: 'normal',
+      fontWeight: options.bodyWeight
     },
-    "blockquote cite:before": {
-      content: '"— "',
+    'blockquote cite:before': {
+      content: '"— "'
     },
     [MOBILE_MEDIA_QUERY]: {
       blockquote: {
         borderLeft: `${rhythm(3 / 16)} solid ${linkColor}`,
         paddingLeft: rhythm(9 / 16),
-        fontStyle: "italic",
+        fontStyle: 'italic',
         marginLeft: rhythm(-3 / 4),
-        marginRight: 0,
-      },
-    },
+        marginRight: 0
+      }
+    }
   })
 };
 
