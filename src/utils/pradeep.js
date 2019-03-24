@@ -48,6 +48,10 @@ const theme = {
     'blockquote cite:before': {
       content: '"— "'
     },
+    'thead': {
+      background: 'green',
+      color: 'white'
+    },
     [MOBILE_MEDIA_QUERY]: {
       blockquote: {
         borderLeft: `${rhythm(3 / 16)} solid ${linkColor}`,
