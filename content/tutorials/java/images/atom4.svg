@@ -1,1 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="794" height="1123" viewBox="0 0 210 297"><style><![CDATA[.B{stroke-linejoin:bevel}.C{stroke-width:.525}.D{stroke:#000}.E{stroke-linecap:round}.F{font-size:6.488px}.G{word-spacing:0}.H{stroke-dashoffset:.4}.I{fill-rule:evenodd}.J{stroke-width:.341}]]></style><g fill="none" class="D C"><g stroke-dasharray="1.05086814, 2.10173626" class="B E"><ellipse cx="75.892" cy="67.578" rx="41.388" ry="38.027"/><ellipse cx="125.89" cy="68.756" rx="40.473" ry="37.186" class="H"/></g><ellipse cx="74.796" cy="67.107" rx="26.005" ry="23.893" class="B"/><ellipse cx="126.07" cy="68.116" rx="26.005" ry="23.893" class="B"/><path d="M41.1 159.52l117.94-1.346M41.465 162.98l117.94-1.346M42.564 203.85l117.94-1.346m-119.04 4.136l117.94-1.346"/></g><g class="B I C D"><ellipse cx="73.697" cy="67.78" rx="1.465" ry="1.346"/><ellipse cx="125.34" cy="67.78" rx="1.465" ry="1.346"/></g><text transform="scale(1.0433 .95854)" x="159.863" y="169.897" font-family="sans-serif" letter-spacing="0" xml:space="preserve" class="F G"><tspan x="159.863" y="169.897">Bands</tspan></text><path d="M144.33 32.7l17.26-12.94" fill="none" marker-start="url(#A)" class="D J"/><text transform="scale(1.0433 .95854)" x="154.892" y="20.614" font-family="'Bitstream Charter'" letter-spacing="0" xml:space="preserve" class="F G"><tspan x="154.892" y="20.614">Orbital</tspan></text><g fill="none" class="D"><path d="M144.02 33.057l17.262-12.94" marker-start="url(#B)" class="J"/><path d="M128.42 67.82l46.965 1.947" marker-start="url(#C)" stroke-width=".537" class="B E"/></g><text transform="scale(1.0433 .95854)" x="172.326" y="74.892" font-family="'Courier 10 Pitch'" letter-spacing="0" xml:space="preserve" class="F G"><tspan x="172.326" y="74.892">nucleus</tspan></text><g fill="none" class="C D"><path d="M41.524 161.37l117.94-1.346m-118.742.476l117.94-1.346M41.524 208.9l117.94-1.346M40.722 212.8l117.94-1.346"/><g stroke-dasharray="1.05086815, 2.10173628" class="B E"><ellipse cx="76.755" cy="99.074" rx="41.388" ry="38.027"/><ellipse cx="126.75" cy="100.25" rx="40.473" ry="37.186" class="H"/></g><ellipse cx="75.658" cy="98.602" rx="26.005" ry="23.893" class="B"/><ellipse cx="126.94" cy="99.612" rx="26.005" ry="23.893" class="B"/></g><g class="I B C D"><ellipse cx="74.559" cy="99.275" rx="1.465" ry="1.346"/><ellipse cx="126.2" cy="99.275" rx="1.465" ry="1.346"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="297" viewBox="0 0 210 297">
+    <style>
+        <![CDATA[.B{stroke-linejoin:bevel}.C{stroke-width:.525}.D{stroke:#000}.E{stroke-linecap:round}.F{font-size:6.488px}.G{word-spacing:0}.H{stroke-dashoffset:.4}.I{fill-rule:evenodd}.J{stroke-width:.341}]]>
+    </style>
+    <g fill="none" class="D C">
+        <g stroke-dasharray="1.05086814, 2.10173626" class="B E">
+            <ellipse cx="75.892" cy="67.578" rx="41.388" ry="38.027"/>
+            <ellipse cx="125.89" cy="68.756" class="H" rx="40.473" ry="37.186"/>
+        </g>
+        <ellipse cx="74.796" cy="67.107" class="B" rx="26.005" ry="23.893"/>
+        <ellipse cx="126.07" cy="68.116" class="B" rx="26.005" ry="23.893"/>
+        <path d="M41.1 159.52l117.94-1.346M41.465 162.98l117.94-1.346M42.564 203.85l117.94-1.346m-119.04 4.136l117.94-1.346"/>
+    </g>
+    <g class="B I C D">
+        <ellipse cx="73.697" cy="67.78" rx="1.465" ry="1.346"/>
+        <ellipse cx="125.34" cy="67.78" rx="1.465" ry="1.346"/>
+    </g>
+    <text x="159.863" y="169.897" class="F G" font-family="sans-serif" letter-spacing="0" transform="scale(1.0433 .95854)" xml:space="preserve">
+        <tspan x="159.863" y="169.897">Bands</tspan>
+    </text>
+    <path fill="none" marker-start="url(#A)" d="M144.33 32.7l17.26-12.94" class="D J"/>
+    <text x="154.892" y="20.614" class="F G" font-family="'Bitstream Charter'" letter-spacing="0" transform="scale(1.0433 .95854)" xml:space="preserve">
+        <tspan x="154.892" y="20.614">Orbital</tspan>
+    </text>
+    <g fill="none" class="D">
+        <path marker-start="url(#B)" d="M144.02 33.057l17.262-12.94" class="J"/>
+        <path stroke-width=".537" marker-start="url(#C)" d="M128.42 67.82l46.965 1.947" class="B E"/>
+    </g>
+    <text x="172.326" y="74.892" class="F G" font-family="'Courier 10 Pitch'" letter-spacing="0" transform="scale(1.0433 .95854)" xml:space="preserve">
+        <tspan x="172.326" y="74.892">nucleus</tspan>
+    </text>
+    <g fill="none" class="C D">
+        <path d="M41.524 161.37l117.94-1.346m-118.742.476l117.94-1.346M41.524 208.9l117.94-1.346M40.722 212.8l117.94-1.346"/>
+        <g stroke-dasharray="1.05086815, 2.10173628" class="B E">
+            <ellipse cx="76.755" cy="99.074" rx="41.388" ry="38.027"/>
+            <ellipse cx="126.75" cy="100.25" class="H" rx="40.473" ry="37.186"/>
+        </g>
+        <ellipse cx="75.658" cy="98.602" class="B" rx="26.005" ry="23.893"/>
+        <ellipse cx="126.94" cy="99.612" class="B" rx="26.005" ry="23.893"/>
+    </g>
+    <g class="I B C D">
+        <ellipse cx="74.559" cy="99.275" rx="1.465" ry="1.346"/>
+        <ellipse cx="126.2" cy="99.275" rx="1.465" ry="1.346"/>
+    </g>
+</svg>
