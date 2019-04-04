@@ -17,30 +17,87 @@ import Atom6 from './images/atom6.svg'
 import Atom7 from './images/atom7.svg'
 import Atom8 from './images/atom8.svg'
 import Atom9 from './images/atom9.svg'
+import PIB from './images/pib.svg'
 
+
+# Band diagrams
+Before we go to the details of band diagrams. Lets understand on a very basic level what energy bands
+are and how they form.
+
+## Hydrogen Atom
+Below is a representation of a hydrogen atom with the sub atomic radius of ~0.52 A(Amstrongs). 
+The [Bohr radius](https://en.wikipedia.org/wiki/Bohr_radius) (a0 or rBohr) is a physical constant, approximately equal to the most probable distance between the nucleus and the electron in a hydrogen atom in its ground state. 
+It is named after Niels Bohr, due to its role in the Bohr model of an atom.
+
+A quantum mechanical system or particle that is bound—that is, confined spatially—can only take on certain discrete values of energy.[1](https://en.wikipedia.org/wiki/Energy_level)
+[quantum number](https://en.wikipedia.org/wiki/Quantum_number)
 <figure>
  <img src={Atom1} alt="Atom with energy level"></img>
 </figure>
-<figure>
- <img src={Atom2} alt="Atoms with interacting forces"></img>
-</figure>
-<figure>
- <img src={Atom3} alt="Atoms in a lattice"></img>
-</figure>
-<figure>
- <img src={Atom4} alt="Graph energy vs no of wells"></img>
-</figure>
-<figure>
- <img src={Atom5} alt="Energy vs interatomic distance"></img>
-</figure>
-<figure>
- <img src={Atom6} alt="Potential well"></img>
-</figure>
+
+Four quantum numbers can describe an electron in an atom completely. As per the following model, these nearly-compatible quantum numbers are:
+
+- Principal quantum number (n)
+- Azimuthal quantum number (ℓ)
+- Magnetic quantum number (m)
+- Spin quantum number (s)
+
+## Potential well[(1)](https://en.wikipedia.org/wiki/Potential_well)
+A potential well is the region surrounding a local minimum of potential energy. 
+Energy captured in a potential well is unable to convert to another type of energy (kinetic energy in the case of a gravitational potential well) because it is captured in the local minimum of a potential well. 
+Therefore, a body may not proceed to the global minimum of potential energy, as it would naturally tend to due to entropy.
+
 <figure>
  <img src={Atom7} alt="Interacting well"></img>
 </figure>
+
+### [Stationary State](https://en.wikipedia.org/wiki/Stationary_state)
+A stationary state is also called energy eigenvector, energy eigenstate, energy eigenfunction, or energy eigenket. 
+It is very similar to the concept of atomic orbital and molecular orbital in chemistry
+
+Comparison of classical and quantum harmonic oscillator conceptions for a single spinless particle. The two processes differ greatly. The classical process (A–B) is represented as the motion of a particle along a trajectory. 
+The quantum process (C–H) has no such trajectory. Rather, it is represented as a wave; here, the vertical axis shows the real part (blue) and imaginary part (red) of the wave function. Panels (C–F) show four different standing-wave solutions of the Schrödinger equation. 
+Panels (G–H) further show two different wave functions that are solutions of the Schrödinger equation but not standing waves.
+
+![Particale in a Box](https://upload.wikimedia.org/wikipedia/commons/8/8f/InfiniteSquareWellAnimation.gif "Particle in a box")
+
+The below diagram represents a [particle in a box](https://en.wikipedia.org/wiki/Particle_in_a_box)
+
+
+<figure>
+ <img src={PIB} alt="particles in a box"></img>
+ <figcaption> Initial wavefunctions for the first four states in a one-dimensional particle in a box</figcaption>
+</figure>
+In a the interatomic space is more than the wave/orbitals the energy levels are discrete.
+<figure>
+ <img src={Atom2} alt="Atoms with interacting forces"></img>
+</figure>
+When the atoms are tightly packed for eample in a semi conductor. 
+The energy levels interact and energy gets split into multiple lebels each. There levels are batched together into energy bands.
+<figure>
+ <img src={Atom3} alt="Atoms in a lattice"></img>
+</figure>
+
+In a 1D lattice the atom's energy elevls interact with each other resulting in band formation.
+<figure>
+ <img src={Atom4} alt="Graph energy vs no of wells"></img>
+</figure>
+
+<figure>
+ <img src={Atom6} alt="Potential well"></img>
+ <figcaption>Potential wells in a 1D lattice</figcaption>
+</figure>
+
+## Semi Conductor Band diagram
+<figure>
+ <img src={Atom5} alt="Energy vs interatomic distance"></img>
+ <figcaption>Energy vs interatomic distance</figcaption>
+</figure>
+
+
 <figure>
  <img src={Atom8} alt="Lattice"></img>
+ <figcaption>Interacting potential wells</figcaption>
 </figure>
 <figure>
  <img src={Atom9} alt="Interacting wells"></img>

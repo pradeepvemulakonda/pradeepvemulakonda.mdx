@@ -1,1 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="794" height="1123" viewBox="0 0 210 297"><style><![CDATA[.B{word-spacing:0}.C{stroke:#000}.D{font-family:sans-serif}.E{font-size:4.939px}.F{font-size:5.644px}.G{stroke-width:.265}.H{stroke-width:.318}]]></style><defs><pattern  width="30.066" height="5.181" patternUnits="userSpaceOnUse"><path d="M7.597.06C5.08-.187 2.656.302-.01 1.788V3.06c2.783-1.63 5.183-2.01 7.482-1.78s4.497 1.08 6.78 1.938c4.567 1.713 9.55 3.458 15.813-.157l-.004-1.273c-6.44 3.71-10.816 1.982-15.37.273-2.278-.854-4.576-1.75-7.094-2z"/></pattern></defs><path d="M31.58 22.513L183 22.7" fill="none" stroke-width=".276" class="C"/><circle cx="101.93" cy="23.146" r="9.939" fill="#f00000" fill-rule="evenodd" stroke="red" stroke-dasharray="63.06655126, 31.53327563" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="7.883"/><g fill="none" class="C G"><path d="M30.68 68.394l146.14-.363" stroke-dasharray="2.11666654, 1.05833327"/><path d="M32.677 107.6l145.05-.908" stroke-dasharray="1.5874999, 1.5874999"/></g><text x="177.728" y="68.757" letter-spacing="0" xml:space="preserve" class="B D E"><tspan x="177.728" y="68.757">E3</tspan></text><text x="179.18" y="107.244" letter-spacing="0" xml:space="preserve" class="B D E"><tspan x="179.18" y="107.244">E2</tspan></text><path d="M120.63 17.61l25.038-8.4" fill="none" marker-start="url(#A)" class="C H"/><text x="149.232" y="8.793" font-size="10.583" letter-spacing="0" xml:space="preserve" class="B D"><tspan x="149.232" y="8.793" class="F">atom</tspan></text><text x="183.174" y="83.825" font-family="'Adobe Helvetica'" letter-spacing="0" xml:space="preserve" class="B F"><tspan x="183.174" y="83.825">Potential</tspan><tspan x="183.174" y="90.881">energy</tspan></text><g fill="none" class="C"><g class="G"><path d="M18.336 59.182L30.862 59l-.363 72.435 146.5-1.452-.908-71.164h18.154"/><path d="M30.862 59c63.71 36.392 71.363 70.777 71.345 71.164 10.54-21.913 20.01-45.995 73.887-71.345"/></g><path d="M30.68 116.37c35-16.76 61.025-58.15 77.88-54.644 3.66-1.33-2.717-.556 0 0 35.178 6.53 30.442 43.376 67.533 59.364" stroke-dasharray="4.79999998, 4.79999998" stroke-width=".4"/></g><text x="179.962" y="129.933" letter-spacing="0" xml:space="preserve" class="B D E"><tspan x="179.962" y="129.933">E1</tspan></text><path d="M117.38 60.276l25.038-8.4" fill="none" marker-start="url(#C)" class="C H"/><text x="145.414" y="52.465" font-family="'Adobe Courier'" letter-spacing="0" xml:space="preserve" class="B F"><tspan x="145.414" y="52.465">wave</tspan></text></svg>
+<svg 
+    xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 210 130">
+    <style>
+        <![CDATA[.B{word-spacing:0}.C{stroke:#000}.D{font-family:sans-serif}.E{font-size:4.939px}.F{font-size:5.644px}.G{stroke-width:.265}.H{stroke-width:.318}]]>
+    </style>
+    <defs>
+        <pattern width="30.066" height="5.181" patternUnits="userSpaceOnUse">
+            <path d="M7.597.06C5.08-.187 2.656.302-.01 1.788V3.06c2.783-1.63 5.183-2.01 7.482-1.78s4.497 1.08 6.78 1.938c4.567 1.713 9.55 3.458 15.813-.157l-.004-1.273c-6.44 3.71-10.816 1.982-15.37.273-2.278-.854-4.576-1.75-7.094-2z"/>
+        </pattern>
+    </defs>
+    <path d="M31.58 22.513L183 22.7" fill="none" stroke-width=".276" class="C"/>
+    <circle cx="101.93" cy="23.146" r="9.939" fill="#f00000" fill-rule="evenodd" stroke="red" stroke-dasharray="63.06655126, 31.53327563" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="7.883"/>
+    <g fill="none" class="C G">
+        <path d="M30.68 68.394l146.14-.363" stroke-dasharray="2.11666654, 1.05833327"/>
+        <path d="M32.677 107.6l145.05-.908" stroke-dasharray="1.5874999, 1.5874999"/>
+    </g>
+    <text x="177.728" y="68.757" letter-spacing="0" xml:space="preserve" class="B D E">
+        <tspan x="177.728" y="68.757">E3</tspan>
+    </text>
+    <text x="179.18" y="107.244" letter-spacing="0" xml:space="preserve" class="B D E">
+        <tspan x="179.18" y="107.244">E2</tspan>
+    </text>
+    <path d="M120.63 17.61l25.038-8.4" fill="none" marker-start="url(#A)" class="C H"/>
+    <text x="149.232" y="8.793" font-size="10.583" letter-spacing="0" xml:space="preserve" class="B D">
+        <tspan x="149.232" y="8.793" class="F">atom</tspan>
+    </text>
+    <text x="183.174" y="83.825" font-family="'Adobe Helvetica'" letter-spacing="0" xml:space="preserve" class="B F">
+        <tspan x="183.174" y="83.825">Potential</tspan>
+        <tspan x="183.174" y="90.881">energy</tspan>
+    </text>
+    <g fill="none" class="C">
+        <g class="G">
+            <path d="M18.336 59.182L30.862 59l-.363 72.435 146.5-1.452-.908-71.164h18.154"/>
+            <path d="M30.862 59c63.71 36.392 71.363 70.777 71.345 71.164 10.54-21.913 20.01-45.995 73.887-71.345"/>
+        </g>
+        <path d="M30.68 116.37c35-16.76 61.025-58.15 77.88-54.644 3.66-1.33-2.717-.556 0 0 35.178 6.53 30.442 43.376 67.533 59.364" stroke-dasharray="4.79999998, 4.79999998" stroke-width=".4"/>
+    </g>
+    <text x="179.962" y="129.933" letter-spacing="0" xml:space="preserve" class="B D E">
+        <tspan x="179.962" y="129.933">E1</tspan>
+    </text>
+    <path d="M117.38 60.276l25.038-8.4" fill="none" marker-start="url(#C)" class="C H"/>
+    <text x="145.414" y="52.465" font-family="'Adobe Courier'" letter-spacing="0" xml:space="preserve" class="B F">
+        <tspan x="145.414" y="52.465">wave </tspan>
+    </text>
+</svg>
