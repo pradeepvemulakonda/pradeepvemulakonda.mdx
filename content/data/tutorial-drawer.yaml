@@ -44,5 +44,11 @@
       link: /tutorials/java/04_solids/
     - title: PN Junction
       link: /tutorials/java/07_pnjunction/
+    - title: Transistors
+      link: /tutorials/java/08_transistors/
+    - title: Microprocessors
+      link: /tutorials/java/09_microprocessor/
+    - title: Java Virtual Machine
+      link: /tutorials/java/10_jvm/
     - title: Introduction to Java
       link: /tutorials/java/00_java_introduction/
