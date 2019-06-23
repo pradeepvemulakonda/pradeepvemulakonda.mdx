@@ -77,16 +77,16 @@ buildTutorials = (edges, createPage) => {
     return edge.node.fields.sourceName === 'tutorials';
   });
   tutorials.forEach(({ node }, index) => {
-    const previous = index === tutorials.length - 1 ? null : tutorials[index + 1].node;
-    const next = index === 0 ? null : tutorials[index - 1].node;
+    const next = index === tutorials.length - 1 ? null : tutorials[index + 1].node;
+    const previous = index === 0 ? null : tutorials[index - 1].node;
     createPage({
       path: node.fields.slug,
       component: tutorial,
       context: {
         slug: node.fields.slug,
         sourceName: node.fields.sourceName,
-        previous,
-        next
+        next,
+        previous
       }
     });
   });
@@ -99,14 +99,6 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     }
   });
 };
-
-// exports.onPostBuild = (pages, callback) => {
-//   console.log('Building Atom feed');
-//   // Copy favicon.
-//   fs.copySync(path.join(__dirname, '/static/google59ded418f23f0d91.html'), path.join(__dirname, '/public'));
-//   // Next callback.
-//   callback();
-// };
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
