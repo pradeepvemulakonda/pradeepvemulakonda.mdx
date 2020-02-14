@@ -84,7 +84,7 @@
     "typography-theme-fairy-gates": "^0.16.18",
     "typography-theme-sutro": "^0.16.18",
     "typography-theme-wordpress-2016": "^0.15.10",
-    "yarn": "^1.13.0"
+    "yarn": "^1.22.0"
   },
   "keywords": [
     "gatsby"
